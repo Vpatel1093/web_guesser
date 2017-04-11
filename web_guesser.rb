@@ -1,5 +1,5 @@
 require 'sinatra'
-require 'sinatra/reloader' if deployment?
+require 'sinatra/reloader' if development?
 
 SECRET_NUMBER = rand(101)
 @@guesses_left = 5
